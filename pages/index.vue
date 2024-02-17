@@ -1,3 +1,4 @@
 <template>
-  <Effect />
+  <!-- <Effect /> -->
+  <Card3D />
 </template>
