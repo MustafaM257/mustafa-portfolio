@@ -1,7 +1,7 @@
 <template>
   <Popover v-slot="{ open }">
     <PopoverButton
-      class="flex items-center px-4 py-2 text-sm font-medium rounded-full shadow-lg group bg-white/90 text-zinc-800 shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10 dark:hover:ring-white/20"
+      class="fixed flex items-center px-4 py-2 text-sm font-medium rounded-full shadow-lg right-5 top-5 group bg-white/90 text-zinc-800 shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10 dark:hover:ring-white/20"
     >
       Menu
       <p
