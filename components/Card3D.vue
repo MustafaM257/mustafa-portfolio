@@ -20,21 +20,19 @@ const cardTransform = computed(() => {
 });
 </script>
 <template>
-  <div class="flex items-center justify-center w-full h-screen bg-black">
-    <div
-      ref="target"
-      class="p-8 bg-blue-300 rounded shadow-2xl w-80 h-80 card"
-      :style="{
-        transform: cardTransform,
-        transition: 'transform 0.25s ease-out',
-      }"
-    >
-      <h1>Testing 3d card</h1>
-      <p>
-        The operating system is not working on the PC, I like to use simple
-        english instead of lorem ipsum!
-      </p>
-    </div>
+  <div
+    ref="target"
+    class="p-8 bg-red-300 rounded shadow-2xl card"
+    :style="{
+      transform: cardTransform,
+      transition: 'transform 0.25s ease-out',
+    }"
+  >
+    <h1>Testing 3d card</h1>
+    <p>
+      The operating system is not working on the PC, I like to use simple
+      english instead of lorem ipsum!
+    </p>
   </div>
 </template>
 <style scoped></style>
