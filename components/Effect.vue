@@ -37,13 +37,13 @@ const logoGradient = computed(() => {
       }"
     />
     <p
-      class="text-white text-7xl"
+      class="text-white uppercase text-7xl"
       ref="logo"
       :style="{
         maskImage: logoGradient,
       }"
     >
-      Logo goes here
+      Mustafa
     </p>
   </div>
 </template>

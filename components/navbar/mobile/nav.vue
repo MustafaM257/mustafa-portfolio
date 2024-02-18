@@ -1,12 +1,14 @@
 <template>
   <Popover v-slot="{ open }">
     <PopoverButton
-      class="fixed flex items-center px-4 py-2 text-sm font-medium rounded-full shadow-lg top-5 right-5 group bg-white/90 text-zinc-800 shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur"
+      class="fixed z-50 flex items-center px-4 py-2 text-sm font-medium rounded-full shadow-lg top-5 right-5 group bg-white/90 text-zinc-800 shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur"
     >
       Menu
-      <p class="w-2 h-auto ml-3 stroke-zinc-500 group-hover:stroke-zinc-700">
-        icon
-      </p>
+
+      <Icon
+        name="i-material-symbols:keyboard-double-arrow-down-rounded"
+        class="w-6 h-6 mt-1 ml-2 text-zinc-500"
+      />
     </PopoverButton>
     <PopoverOverlay
       class="fixed inset-0 z-50 bg-zinc-800/40 backdrop-blur-sm"
@@ -26,17 +28,20 @@
       >
         <div class="flex flex-row-reverse items-center justify-between">
           <PopoverButton aria-label="Close menu" class="p-1 -m-1">
-            <p class="w-6 h-6 text-zinc-500">icon</p>
+            <Icon
+              name="i-material-symbols:close-rounded"
+              class="w-6 h-6 text-zinc-500"
+            />
           </PopoverButton>
           <h2 class="text-sm font-medium text-zinc-600">Navigation</h2>
         </div>
         <nav class="mt-6">
           <ul class="-my-2 text-base divide-y divide-zinc-100 text-zinc-800">
-            <NavbarMobileItem href="/about">About</NavbarMobileItem>
-            <NavbarMobileItem href="/articles">Articles</NavbarMobileItem>
-            <NavbarMobileItem href="/projects">Projects</NavbarMobileItem>
-            <NavbarMobileItem href="/speaking">Speaking</NavbarMobileItem>
-            <NavbarMobileItem href="/uses">Uses</NavbarMobileItem>
+            <NavbarMobileItem href="#home">Home</NavbarMobileItem>
+            <NavbarMobileItem href="#about">About</NavbarMobileItem>
+            <NavbarMobileItem href="#experience">Experience</NavbarMobileItem>
+            <NavbarMobileItem href="#projects">Projects</NavbarMobileItem>
+            <NavbarMobileItem href="#contact">Contact</NavbarMobileItem>
           </ul>
         </nav>
       </PopoverPanel>

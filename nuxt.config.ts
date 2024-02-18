@@ -6,5 +6,6 @@ export default defineNuxtConfig({
     'nuxt-headlessui',
     '@nuxtjs/tailwindcss',
     '@vueuse/nuxt',
+    'nuxt-icon',
   ]
 });

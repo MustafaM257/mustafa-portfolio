@@ -1,7 +1,7 @@
 <template>
   <li>
     <NuxtLink
-      to="#"
+      :to="href"
       class="relative block px-3 py-2 transition"
       :class="[
         isActive ? 'text-teal-500 ' : '',
