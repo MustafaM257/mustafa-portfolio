@@ -3,8 +3,8 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: 
   [
+    'nuxt-headlessui',
     '@nuxtjs/tailwindcss',
     '@vueuse/nuxt',
-    'nuxt-headlessui'
   ]
 });
