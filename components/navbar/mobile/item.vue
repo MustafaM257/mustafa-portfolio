@@ -1,12 +1,13 @@
 <template>
   <li>
-    <PopoverButton as="{Link}" href="{href}" className="block py-2">
+    <PopoverButton class="block py-2">
       <slot />
     </PopoverButton>
   </li>
 </template>
 
-<script setup>
+<script setup lang="ts">
+// @ts-ignore
 import { PopoverButton } from "@headlessui/vue";
 
 const props = defineProps({

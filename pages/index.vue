@@ -1,4 +1,4 @@
 <template>
   <!-- <Effect /> -->
-  <Card3D />
+  <NavbarMobileNav />
 </template>
