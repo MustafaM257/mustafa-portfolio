@@ -1,8 +1,10 @@
 <template>
   <li>
-    <PopoverButton class="block py-2">
-      <slot />
-    </PopoverButton>
+    <NuxtLink :to="href">
+      <PopoverButton class="block py-2">
+        <slot />
+      </PopoverButton>
+    </NuxtLink>
   </li>
 </template>
 

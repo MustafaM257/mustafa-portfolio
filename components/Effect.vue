@@ -28,7 +28,7 @@ const logoGradient = computed(() => {
   >
     <!-- This will be the floating mouse effect -->
     <div
-      class="absolute -translate-x-1/2 -translate-y-1/2 rounded-full pointer-events-none bg-green-500/30 blur-3xl"
+      class="absolute -translate-x-1/2 -translate-y-1/2 rounded-full pointer-events-none bg-blue-500/30 blur-3xl"
       :style="{
         left: `${x}px`,
         top: `${y}px`,
