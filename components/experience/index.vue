@@ -1,32 +1,42 @@
 <template>
-  <div
-    class="flex flex-row items-center justify-between w-full gap-5 py-16 mx-auto lg:px-8 max-w-7xl"
-  >
-    <div class="">
-      <h1
-        class="text-3xl font-bold tracking-wide text-zinc-800 sm:text-5xl dark:text-zinc-100"
-      >
-        Work
-      </h1>
-      <div class="flex flex-col max-w-3xl gap-5 py-10">
-        <ExperienceCard
-          v-for="experience in work"
-          :item="experience"
-          class="px-4 py-8 bg-blue-500"
-        />
+  <div class="w-full px-2 py-10 mx-auto max-w-7xl lg:px-8">
+    <div
+      class="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12"
+    >
+      <div class="lg:order-first lg:row-span-2">
+        <h1
+          class="text-3xl font-bold tracking-wide text-zinc-800 sm:text-5xl dark:text-zinc-100"
+        >
+          Work
+        </h1>
+        <div class="mt-6 text-base space-y-7 text-zinc-600">
+          <ExperienceCard
+            v-for="experience in work"
+            :item="experience"
+            class="px-4 py-8 bg-blue-500"
+          />
+        </div>
       </div>
-      <h1
-        class="text-3xl font-bold tracking-wide text-zinc-800 sm:text-5xl dark:text-zinc-100"
-      >
-        Education
-      </h1>
-      <div class="flex flex-col max-w-3xl gap-5 py-10">
-        <ExperienceCard :item="education" class="px-4 py-8 bg-blue-500" />
+      <div class="lg:pl-20">
+        <ul role="list" class="flex flex-col gap-5 text-white">
+          <!-- <NuxtLink
+            v-for="link in socialLinks"
+            :key="link.platform"
+            :to="link.url"
+            target="_blank"
+            class="transition-all hover:text-blue-500"
+          > -->
+          <h1
+            class="text-3xl font-bold tracking-wide text-zinc-800 sm:text-5xl dark:text-zinc-100"
+          >
+            Skills
+          </h1>
+          <li class="flex flex-row flex-wrap gap-5">
+            <Icon name="i-logos:nuxt" v-for="i in 10" class="w-32 h-32" />
+          </li>
+          <!-- </NuxtLink> -->
+        </ul>
       </div>
-    </div>
-
-    <div class="flex flex-col gap-4">
-      <Icon name="i-logos:nuxt" v-for="i in 10" class="w-10 h-10" />
     </div>
   </div>
 </template>
