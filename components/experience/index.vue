@@ -31,24 +31,26 @@
         >
           Skills
         </h1>
-        <ul
-          role="list"
-          class="flex flex-wrap items-center justify-between px-8 mt-6 text-center space-x-7"
-        >
-          <li
-            v-for="skill in skills"
-            :key="skill.name"
-            class="w-32 h-32 text-white rounded-2xl"
+        <div class="mt-6 text-base text-white space-y-7">
+          <ul
+            role="list"
+            class="grid grid-cols-2 mt-6 text-center gap-x-4 gap-y-4 hover:opacity-90"
           >
-            <NuxtLink
-              :to="skill.link"
-              class="text-lg font-bold hover:underline"
-              target="_blank"
+            <li
+              v-for="skill in skills"
+              :key="skill.name"
+              class="w-full px-4 py-4 transition-all shadow-lg bg-neutral-500 hover:bg-blue-600 rounded-2xl"
             >
-              <Icon :name="skill.icon" class="w-full h-full" />
-            </NuxtLink>
-          </li>
-        </ul>
+              <NuxtLink
+                :to="skill.link"
+                class="block text-lg font-bold text-white hover:underline"
+                target="_blank"
+              >
+                <Icon :name="skill.icon" class="w-16 h-16 mx-auto" />
+              </NuxtLink>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
