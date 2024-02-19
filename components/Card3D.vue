@@ -1,7 +1,7 @@
 <template>
   <div
     ref="target"
-    class="p-8 bg-gray-600 rounded shadow-2xl card"
+    class="p-8 bg-gray-600 shadow-2xl rounded-2xl"
     :style="{
       transform: cardTransform,
       transition: 'transform 0.25s ease-out',

@@ -16,12 +16,12 @@
     <div class="flex flex-col max-w-3xl gap-5 py-10">
       <Card3D :item="education" />
     </div>
-    <h1
+    <!-- <h1
       class="text-3xl font-bold tracking-wide text-zinc-800 sm:text-5xl dark:text-zinc-100"
     >
       Skills
     </h1>
-    <div>Section</div>
+    <div>Section</div> -->
   </div>
 </template>
 

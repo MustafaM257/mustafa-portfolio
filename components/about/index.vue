@@ -8,7 +8,7 @@
           <NuxtImg
             :src="imageUrl"
             alt="Profile image"
-            class="object-cover pointer-events-none aspect-square rotate-3 rounded-2xl bg-zinc-100 dark:bg-zinc-800"
+            class="object-cover pointer-events-none aspect-square rotate-3 rounded-2xl bg-zinc-100"
           />
         </div>
       </div>
