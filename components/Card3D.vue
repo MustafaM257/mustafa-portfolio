@@ -7,9 +7,9 @@
       transition: 'transform 0.25s ease-out',
     }"
   >
-    <h1>{{ item.title }}</h1>
-    <h3>{{ item.company }}</h3>
-    <div class="text-sm text-right text-white whitespace-nowrap">
+    <h1 class="text-2xl font-bold">{{ item.title }}</h1>
+    <h3 class="text-xl font-semibold">{{ item.company }}</h3>
+    <div class="text-sm font-medium text-right text-white whitespace-nowrap">
       {{ item.period }} | {{ item.location }}
     </div>
     <Timeline :items="item.description" />

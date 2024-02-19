@@ -3,16 +3,30 @@
     <h1
       class="text-3xl font-bold tracking-wide text-zinc-800 sm:text-5xl dark:text-zinc-100"
     >
-      My Experience
+      Work
     </h1>
-    <div class="flex flex-col max-w-3xl gap-5">
-      <Card3D v-for="experience in experiences" :item="experience" />
+    <div class="flex flex-col max-w-3xl gap-5 py-10">
+      <Card3D v-for="experience in work" :item="experience" />
     </div>
+    <h1
+      class="text-3xl font-bold tracking-wide text-zinc-800 sm:text-5xl dark:text-zinc-100"
+    >
+      Education
+    </h1>
+    <div class="flex flex-col max-w-3xl gap-5 py-10">
+      <Card3D :item="education" />
+    </div>
+    <h1
+      class="text-3xl font-bold tracking-wide text-zinc-800 sm:text-5xl dark:text-zinc-100"
+    >
+      Skills
+    </h1>
+    <div>Section</div>
   </div>
 </template>
 
 <script setup>
-const experiences = [
+const work = [
   {
     title: "Full Stack Developer",
     company: "techKinks",
@@ -49,4 +63,13 @@ const experiences = [
     ],
   },
 ];
+const education = {
+  title: "Bachelor of Computer Science",
+  company: "Lebanese University",
+  period: "2020 – 2023",
+  location: "Beirut, Lebanon",
+  description: [
+    "Related Course Work: Data Structures, Algorithms, Object-Oriented Programming, Web Development, Database Management Systems, Software Engineering, Operating Systems, Computer Networks, and Security.",
+  ],
+};
 </script>

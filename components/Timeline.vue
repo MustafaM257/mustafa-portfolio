@@ -11,7 +11,7 @@
           <div class="relative flex space-x-3">
             <div>
               <span
-                class="flex items-center justify-center w-8 h-8 bg-black rounded-full"
+                class="flex items-center justify-center w-8 h-8 rounded-full"
               >
                 <!-- Icon can be dynamic based on item, if needed -->
               </span>
