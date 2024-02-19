@@ -5,6 +5,33 @@
     >
       My Experience
     </h1>
-    <Card3D v-for="i in 5" class="max-w-3xl" />
+    <Card3D v-for="experience in experiences" :experience="experience" />
   </div>
 </template>
+
+<script setup>
+const experiences = [
+  {
+    title: "Full Stack Developer",
+    company: "techKinks",
+    period: "07/2022 – 12/2023",
+    location: "Beirut, Lebanon",
+    description: [
+      "Spearheaded the development of a Vue/Nuxt based web application, resulting in a 40% increase in user engagement.",
+      "Developed robust back-end systems with Node.js, enhancing scalability and performance.",
+      // More bullet points...
+    ],
+  },
+  {
+    title: "Full Stack Developer",
+    company: "Freelance",
+    period: "02/2021 – 07/2022",
+    location: "Beirut, Lebanon",
+    description: [
+      "Developed MERN stack web applications, focusing on responsive design and cross-browser compatibility, resulting in high client satisfaction.",
+      // More bullet points...
+    ],
+  },
+  // More experiences...
+];
+</script>
