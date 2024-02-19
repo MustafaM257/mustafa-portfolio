@@ -4,6 +4,6 @@
     profession="Software Engineer"
     primaryColor="bg-blue-500/30"
     textColor="text-white"
-    highlightColor="text-orange-500"
+    highlightColor="text-blue-100"
   />
 </template>

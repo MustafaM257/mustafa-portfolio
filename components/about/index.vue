@@ -6,8 +6,8 @@
       <div class="lg:pl-20">
         <div class="max-w-xs px-2.5 lg:max-w-none">
           <NuxtImg
-            src="/mustafa.jpg"
-            alt=""
+            :src="imageUrl"
+            alt="Profile image"
             class="object-cover pointer-events-none aspect-square rotate-3 rounded-2xl bg-zinc-100 dark:bg-zinc-800"
           />
         </div>
@@ -16,40 +16,43 @@
         <h1
           class="text-3xl font-bold tracking-wide text-zinc-800 sm:text-5xl dark:text-zinc-100"
         >
-          I’m Mustafa. I live in New Jersey, United States.
+          I’m <span class="text-blue-500">{{ name }}</span> . I live in
+          {{ location }}.
         </h1>
         <div class="mt-6 text-base space-y-7 text-zinc-600 dark:text-zinc-400">
-          <p>Lorem ipsum....</p>
-          <p>Another lorem ipsum....</p>
-          <p>And another lorem ipsum....</p>
+          <p
+            v-for="(paragraph, index) in biography"
+            :key="index"
+            v-html="paragraph"
+          ></p>
         </div>
       </div>
       <div class="lg:pl-20">
         <ul role="list" class="flex flex-col gap-5 text-white">
-          <li class="flex gap-5">
-            <Icon name="i-line-md:instagram" class="w-6 h-6" />
-            <p>Follow on Instagram!</p>
-          </li>
-          <li class="flex gap-5">
-            <Icon name="i-line-md:linkedin" class="w-6 h-6" />
-            <p>Follow on LinkedIn!</p>
-          </li>
-          <li class="flex gap-5">
-            <Icon name="i-line-md:github" class="w-6 h-6" />
-            <p>Follow on Github!</p>
-          </li>
-          <li
-            class="flex gap-5 pt-8 mt-8 border-t border-zinc-100 dark:border-zinc-700/40"
+          <NuxtLink
+            v-for="link in socialLinks"
+            :key="link.platform"
+            :to="link.url"
+            target="_blank"
+            class="transition-all hover:text-blue-500"
           >
-            <Icon name="i-line-md:email" class="w-6 h-6" />
-            <p>mustafa.m257@proton.me</p>
-          </li>
-          <li class="flex gap-5">
-            <Icon name="i-line-md:phone" class="w-6 h-6" />
-            <p>+1 (347) 382-2775</p>
-          </li>
+            <li class="flex gap-5">
+              <Icon :name="link.icon" class="w-6 h-6" />
+              <p>{{ link.text }}</p>
+            </li>
+          </NuxtLink>
         </ul>
       </div>
     </div>
   </div>
 </template>
+
+<script setup>
+defineProps({
+  name: String,
+  location: String,
+  imageUrl: String,
+  biography: Array,
+  socialLinks: Array,
+});
+</script>
