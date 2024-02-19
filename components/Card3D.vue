@@ -22,17 +22,16 @@ const cardTransform = computed(() => {
 <template>
   <div
     ref="target"
-    class="p-8 bg-red-300 rounded shadow-2xl card"
+    class="p-8 bg-blue-300 rounded shadow-2xl card"
     :style="{
       transform: cardTransform,
       transition: 'transform 0.25s ease-out',
     }"
   >
-    <h1>Testing 3d card</h1>
-    <p>
-      The operating system is not working on the PC, I like to use simple
-      english instead of lorem ipsum!
-    </p>
+    <h1>Front end developer</h1>
+    <h3>techKinks</h3>
+    <h5>2022-2024</h5>
+    <Timeline />
   </div>
 </template>
 <style scoped></style>

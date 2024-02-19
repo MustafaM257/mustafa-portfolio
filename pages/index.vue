@@ -39,12 +39,14 @@ const biography = [
 ];
 </script>
 <template>
-  <Home />
+  <Home id="home" />
   <About
+    id="about"
     name="Mustafa"
     location="New Jersey, United States"
     imageUrl="/mustafa.jpg"
     :biography="biography"
     :socialLinks="socialLinks"
   />
+  <Experience id="experience" />
 </template>
