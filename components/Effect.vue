@@ -24,7 +24,7 @@ const logoGradient = computed(() => {
 </script>
 <template>
   <div
-    class="w-screen h-screen bg-gradient-to-b from-black to-black from-80% flex items-center justify-center relative overflow-hidden"
+    class="w-screen h-screen bg-gradient-to-b from-black to-black from-80% flex items-center justify-center flex-col gap-5 relative overflow-hidden"
   >
     <!-- This will be the floating mouse effect -->
     <div
@@ -36,14 +36,16 @@ const logoGradient = computed(() => {
         height: `${size}px`,
       }"
     />
+    <p class="text-xl font-bold text-orange-500">Hey, I'm</p>
     <p
-      class="text-white uppercase text-7xl"
+      class="text-5xl text-white uppercase"
       ref="logo"
       :style="{
-        maskImage: logoGradient,
+        // maskImage: logoGradient,
       }"
     >
-      Mustafa
+      Mustafa Al Mohammad
     </p>
+    <p class="text-2xl text-white">Software Engineer</p>
   </div>
 </template>

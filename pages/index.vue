@@ -1,5 +1,7 @@
 <template>
   <Effect id="home" />
-  <div id="about" class="h-[200vh]">jsfdi</div>
-  <div class="bg-red-600">Hello from div</div>
+  <div id="about" class="h-[200vh]">
+    <Card3D v-for="i in 3" />
+    <Columns />
+  </div>
 </template>
