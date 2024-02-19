@@ -30,7 +30,10 @@ const cardTransform = computed(() => {
   >
     <h1>Front end developer</h1>
     <h3>techKinks</h3>
-    <h5>2022-2024</h5>
+    <div class="text-sm text-right text-white whitespace-nowrap">
+      <!-- <time :datetime="event.datetime">{{ event.date }}</time> -->
+      date goes here
+    </div>
     <Timeline />
   </div>
 </template>
