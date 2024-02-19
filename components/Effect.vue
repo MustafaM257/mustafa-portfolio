@@ -43,7 +43,7 @@ const logoGradient = computed(() => {
 
 <template>
   <div
-    class="w-screen h-screen bg-gradient-to-b from-black to-black from-80% flex items-center justify-center flex-col gap-5 relative overflow-hidden"
+    class="w-screen h-screen bg-gradient-to-b from-gray-900 to-neutral-900 from-70% flex items-center justify-center flex-col gap-5 relative overflow-hidden"
   >
     <div
       :class="

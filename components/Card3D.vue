@@ -1,20 +1,13 @@
 <template>
   <div
     ref="target"
-    class="p-8 shadow-2xl bg-neutral-700 rounded-2xl"
+    class="shadow-2xl rounded-2xl"
     :style="{
       transform: cardTransform,
       transition: 'transform 0.25s ease-out',
     }"
   >
-    <h1 class="text-2xl font-bold">{{ item.title }}</h1>
-    <h3 class="text-xl font-semibold">{{ item.company }}</h3>
-    <div
-      class="text-sm font-medium text-right text-neutral-100 whitespace-nowrap"
-    >
-      {{ item.period }} | {{ item.location }}
-    </div>
-    <Timeline :items="item.description" />
+    <slot />
   </div>
 </template>
 
@@ -39,9 +32,5 @@ const cardTransform = computed(() => {
   return isOutside.value
     ? ""
     : `perspective(${elementWidth.value}px) rotateX(${rX}deg) rotateY(${rY}deg)`;
-});
-
-const props = defineProps({
-  item: Object,
 });
 </script>

@@ -1,15 +1,17 @@
 <template>
-  <div class="w-full px-2 mx-auto max-w-7xl lg:px-8">
+  <div class="w-full px-2 mx-auto lg:py-2 max-w-7xl lg:px-8">
     <div
       class="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12"
     >
       <div class="lg:pl-20">
         <div class="max-w-xs px-2.5 lg:max-w-none">
-          <NuxtImg
-            :src="imageUrl"
-            alt="Profile image"
-            class="object-cover pointer-events-none aspect-square rotate-3 rounded-2xl bg-zinc-100"
-          />
+          <Card3D>
+            <NuxtImg
+              :src="imageUrl"
+              alt="Profile image"
+              class="object-cover pointer-events-none aspect-square rotate-3 rounded-2xl bg-zinc-100"
+            />
+          </Card3D>
         </div>
       </div>
       <div class="lg:order-first lg:row-span-2">
