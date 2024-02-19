@@ -22,7 +22,7 @@
           Education
         </h1>
         <div class="mt-6 text-base space-y-7 text-zinc-600">
-          <ExperienceCard :item="education" class="px-4 py-8 bg-red-500" />
+          <ExperienceCard :item="education" class="px-4 py-8" />
         </div>
       </div>
       <div class="lg:pl-20">
@@ -31,17 +31,21 @@
         >
           Skills
         </h1>
-        <ul role="list" class="flex flex-wrap gap-5 mt-6 text-white">
-          <li v-for="skill in skills" :key="skill.name">
+        <ul
+          role="list"
+          class="flex flex-wrap items-center justify-between px-8 mt-6 text-center space-x-7"
+        >
+          <li
+            v-for="skill in skills"
+            :key="skill.name"
+            class="w-32 h-32 text-white rounded-2xl"
+          >
             <NuxtLink
               :to="skill.link"
               class="text-lg font-bold hover:underline"
               target="_blank"
             >
-              <Icon
-                :name="skill.icon"
-                class="w-40 h-40 text-white bg-white rounded-2xl"
-              />
+              <Icon :name="skill.icon" class="w-full h-full" />
             </NuxtLink>
           </li>
         </ul>
@@ -99,6 +103,46 @@ const education = {
 };
 const skills = [
   {
+    name: "HTML",
+    icon: "i-logos:html-5",
+    link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
+  },
+  {
+    name: "CSS",
+    icon: "i-logos:css-3",
+    link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+  },
+  {
+    name: "tailwind",
+    icon: "i-logos:tailwindcss",
+    link: "https://tailwindcss.com/",
+  },
+  {
+    name: "bootstrap",
+    icon: "i-logos:bootstrap",
+    link: "https://getbootstrap.com/",
+  },
+  {
+    name: "javascript",
+    icon: "i-logos:javascript",
+    link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+  },
+  {
+    name: "Typescript",
+    icon: "i-logos:typescript-icon",
+    link: "https://www.typescriptlang.org/",
+  },
+  {
+    name: "React",
+    icon: "i-logos:react",
+    link: "https://reactjs.org/",
+  },
+  {
+    name: "Next",
+    icon: "i-logos:nextjs",
+    link: "https://nextjs.org/",
+  },
+  {
     name: "Vue",
     icon: "i-logos:vue",
     link: "https://vuejs.org/",
@@ -107,6 +151,26 @@ const skills = [
     name: "Nuxt",
     icon: "i-logos:nuxt",
     link: "https://nuxtjs.org/",
+  },
+  {
+    name: "Node",
+    icon: "i-logos:nodejs",
+    link: "https://nodejs.org/",
+  },
+  {
+    name: "Express",
+    icon: "i-logos:express",
+    link: "https://expressjs.com/",
+  },
+  {
+    name: "MongoDB",
+    icon: "i-logos:mongodb",
+    link: "https://www.mongodb.com/",
+  },
+  {
+    name: "PostgreSQL",
+    icon: "i-logos:postgresql",
+    link: "https://www.postgresql.org/",
   },
 ];
 </script>
