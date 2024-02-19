@@ -6,22 +6,20 @@
       Work
     </h1>
     <div class="flex flex-col max-w-3xl gap-5 py-10">
-      <Card3D v-for="experience in work" :item="experience" />
+      <ExperienceCard
+        v-for="experience in work"
+        :item="experience"
+        class="px-4 py-8 bg-blue-500"
+      />
     </div>
-    <!-- <h1
+    <h1
       class="text-3xl font-bold tracking-wide text-zinc-800 sm:text-5xl dark:text-zinc-100"
     >
       Education
     </h1>
     <div class="flex flex-col max-w-3xl gap-5 py-10">
-      <Card3D :item="education" />
-    </div> -->
-    <!-- <h1
-      class="text-3xl font-bold tracking-wide text-zinc-800 sm:text-5xl dark:text-zinc-100"
-    >
-      Skills
-    </h1>
-    <div>Section</div> -->
+      <ExperienceCard :item="education" class="px-4 py-8 bg-blue-500" />
+    </div>
   </div>
 </template>
 
