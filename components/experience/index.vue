@@ -1,11 +1,13 @@
 <template>
-  <div class="flex flex-col w-full gap-5 py-16 mx-auto max-w-7xl lg:px-8">
+  <div class="w-full gap-5 py-16 mx-auto max-w-7xl lg:px-8">
     <h1
       class="text-3xl font-bold tracking-wide text-zinc-800 sm:text-5xl dark:text-zinc-100"
     >
       My Experience
     </h1>
-    <Card3D v-for="experience in experiences" :experience="experience" />
+    <div class="flex flex-col max-w-3xl gap-5">
+      <Card3D v-for="experience in experiences" :item="experience" />
+    </div>
   </div>
 </template>
 
@@ -19,7 +21,9 @@ const experiences = [
     description: [
       "Spearheaded the development of a Vue/Nuxt based web application, resulting in a 40% increase in user engagement.",
       "Developed robust back-end systems with Node.js, enhancing scalability and performance.",
-      // More bullet points...
+      "Led the integration of CMS Medusa, enhancing content management capabilities and scalability for eCommerce.",
+      "Designed and implemented a UI library using Nuxt3 and Tailwind CSS, reducing development time for future projects by 30%.",
+      "Mentored interns, significantly improving their coding skills and project contribution rates.",
     ],
   },
   {
@@ -28,10 +32,21 @@ const experiences = [
     period: "02/2021 – 07/2022",
     location: "Beirut, Lebanon",
     description: [
-      "Developed MERN stack web applications, focusing on responsive design and cross-browser compatibility, resulting in high client satisfaction.",
-      // More bullet points...
+      " Developed MERN stack web applications, focusing on responsive design and cross- browser compatibility, resulting in high client satisfaction.",
+      "Translated Figma prototypes into high-fidelity, interactive user interfaces, enhancing user experience and engagement.",
+      "Stayed abreast of open source projects to push towards modern and efficient web solutions.",
     ],
   },
-  // More experiences...
+  {
+    title: "Programming Lab Assistant",
+    company: "Lebanese  University",
+    period: "01/2022 – 04/2022",
+    location: "Beirut, Lebanon",
+    description: [
+      "Enhanced students' understanding of programming and algorithms through innovative teaching and mentorship.",
+      "Led a 12-week intensive training program, integrating Moodle for interactive learning experiences.",
+      "Provided personalized mentorship, aiding students in overcoming academic challenges and achieving success.",
+    ],
+  },
 ];
 </script>
