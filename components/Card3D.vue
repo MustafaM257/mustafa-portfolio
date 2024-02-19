@@ -1,7 +1,7 @@
 <template>
   <div
     ref="target"
-    class="p-8 bg-gray-600 shadow-2xl rounded-2xl"
+    class="p-8 shadow-2xl bg-neutral-700 rounded-2xl"
     :style="{
       transform: cardTransform,
       transition: 'transform 0.25s ease-out',
@@ -9,7 +9,9 @@
   >
     <h1 class="text-2xl font-bold">{{ item.title }}</h1>
     <h3 class="text-xl font-semibold">{{ item.company }}</h3>
-    <div class="text-sm font-medium text-right text-white whitespace-nowrap">
+    <div
+      class="text-sm font-medium text-right text-neutral-100 whitespace-nowrap"
+    >
       {{ item.period }} | {{ item.location }}
     </div>
     <Timeline :items="item.description" />

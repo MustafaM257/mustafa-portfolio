@@ -19,7 +19,7 @@
           I’m <span class="text-blue-500">{{ name }}</span> . I live in
           {{ location }}.
         </h1>
-        <div class="mt-6 text-base space-y-7 text-zinc-600 dark:text-zinc-400">
+        <div class="mt-6 text-base space-y-7 text-zinc-600">
           <p
             v-for="(paragraph, index) in biography"
             :key="index"

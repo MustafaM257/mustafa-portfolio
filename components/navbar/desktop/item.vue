@@ -5,7 +5,7 @@
       class="relative block px-3 py-2 transition"
       :class="[
         isActive ? 'text-teal-500 ' : '',
-        !isActive ? 'hover:text-teal-500 ' : '',
+        !isActive ? 'hover:text-blue-500 ' : '',
       ]"
     >
       <slot />
