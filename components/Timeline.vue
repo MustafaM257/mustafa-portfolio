@@ -18,7 +18,7 @@
             </div>
             <div class="min-w-0 flex-1 pt-1.5 flex justify-between space-x-4">
               <div>
-                <p class="text-sm text-gray-900">{{ item }}</p>
+                <p class="text-sm text-white">{{ item }}</p>
               </div>
             </div>
           </div>

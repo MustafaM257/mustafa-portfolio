@@ -4,4 +4,5 @@
     <NavbarDesktopNav class="hidden pointer-events-auto md:block" />
   </ClientOnly>
   <slot />
+  <Footer />
 </template>
