@@ -3,7 +3,7 @@
     <div
       class="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12"
     >
-      <div class="lg:order-first lg:row-span-2">
+      <div class="space-y-5 lg:order-first lg:row-span-2">
         <h1
           class="text-3xl font-bold tracking-wide text-zinc-800 sm:text-5xl dark:text-zinc-100"
         >
@@ -16,25 +16,34 @@
             class="px-4 py-8 bg-blue-500"
           />
         </div>
+        <h1
+          class="text-3xl font-bold tracking-wide text-zinc-800 sm:text-5xl dark:text-zinc-100"
+        >
+          Education
+        </h1>
+        <div class="mt-6 text-base space-y-7 text-zinc-600">
+          <ExperienceCard :item="education" class="px-4 py-8 bg-red-500" />
+        </div>
       </div>
       <div class="lg:pl-20">
-        <ul role="list" class="flex flex-col gap-5 text-white">
-          <!-- <NuxtLink
-            v-for="link in socialLinks"
-            :key="link.platform"
-            :to="link.url"
-            target="_blank"
-            class="transition-all hover:text-blue-500"
-          > -->
-          <h1
-            class="text-3xl font-bold tracking-wide text-zinc-800 sm:text-5xl dark:text-zinc-100"
-          >
-            Skills
-          </h1>
-          <li class="flex flex-row flex-wrap gap-5">
-            <Icon name="i-logos:nuxt" v-for="i in 10" class="w-32 h-32" />
+        <h1
+          class="text-3xl font-bold tracking-wide text-zinc-800 sm:text-5xl dark:text-zinc-100"
+        >
+          Skills
+        </h1>
+        <ul role="list" class="flex flex-wrap gap-5 mt-6 text-white">
+          <li v-for="skill in skills" :key="skill.name">
+            <NuxtLink
+              :to="skill.link"
+              class="text-lg font-bold hover:underline"
+              target="_blank"
+            >
+              <Icon
+                :name="skill.icon"
+                class="w-40 h-40 text-white bg-white rounded-2xl"
+              />
+            </NuxtLink>
           </li>
-          <!-- </NuxtLink> -->
         </ul>
       </div>
     </div>
@@ -88,4 +97,16 @@ const education = {
     "Related Course Work: Data Structures, Algorithms, Object-Oriented Programming, Web Development, Database Management Systems, Software Engineering, Operating Systems, Computer Networks, and Security.",
   ],
 };
+const skills = [
+  {
+    name: "Vue",
+    icon: "i-logos:vue",
+    link: "https://vuejs.org/",
+  },
+  {
+    name: "Nuxt",
+    icon: "i-logos:nuxt",
+    link: "https://nuxtjs.org/",
+  },
+];
 </script>
