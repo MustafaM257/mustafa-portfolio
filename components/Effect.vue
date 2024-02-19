@@ -1,19 +1,37 @@
 <script setup lang="ts">
+import { computed, ref } from "vue";
 // From useMouse composable via vueuse
 const { x, y } = useMouse();
-// Get distance from mouse to center of the screen & use to calculate size
 const { width, height } = useWindowSize();
+
+const props = defineProps({
+  name: {
+    type: String,
+    default: "Mustafa", // Default name
+  },
+  profession: {
+    type: String,
+    default: "Software Developer", // Default profession
+  },
+  primaryColor: {
+    type: String,
+    default: "bg-blue-500/30", // Default color
+  },
+  textColor: {
+    type: String,
+    default: "text-white", // Default text color
+  },
+  highlightColor: {
+    type: String,
+    default: "text-orange-500", // Default highlight color
+  },
+});
 
 const dx = computed(() => Math.abs(x.value - width.value / 2));
 const dy = computed(() => Math.abs(y.value - height.value / 2));
-
-// Pythagorean theorem to calculate distance from center of the screen to mouse position
 const distance = computed(() => Math.sqrt(dx.value ** 2 + dy.value ** 2));
-
 const size = computed(() => Math.max(300 - distance.value / 3, 150));
-const opacity = computed(() => {
-  Math.min(Math.max(size.value / 300, 0.7), 1);
-});
+
 const logo = ref<HTMLElement>();
 const logoGradient = computed(() => {
   const rectangle = logo.value?.getBoundingClientRect();
@@ -22,13 +40,16 @@ const logoGradient = computed(() => {
   return `radial-gradient(circle at ${xPos}px ${yPos}px, black 30%, transparent 100%)`;
 });
 </script>
+
 <template>
   <div
     class="w-screen h-screen bg-gradient-to-b from-black to-black from-80% flex items-center justify-center flex-col gap-5 relative overflow-hidden"
   >
-    <!-- This will be the floating mouse effect -->
     <div
-      class="absolute -translate-x-1/2 -translate-y-1/2 rounded-full pointer-events-none bg-blue-500/30 blur-3xl"
+      :class="
+        primaryColor +
+        ' absolute -translate-x-1/2 -translate-y-1/2 rounded-full pointer-events-none blur-3xl'
+      "
       :style="{
         left: `${x}px`,
         top: `${y}px`,
@@ -36,16 +57,10 @@ const logoGradient = computed(() => {
         height: `${size}px`,
       }"
     />
-    <p class="text-xl font-bold text-orange-500">Hey, I'm</p>
-    <p
-      class="text-5xl text-white uppercase"
-      ref="logo"
-      :style="{
-        // maskImage: logoGradient,
-      }"
-    >
-      Mustafa Al Mohammad
+    <p :class="`text-lg font-bold ${highlightColor}`">Hey, I'm</p>
+    <p class="text-5xl uppercase" ref="logo" :class="textColor" :style="{}">
+      {{ name }}
     </p>
-    <p class="text-2xl text-white">Software Engineer</p>
+    <p :class="`text-2xl ${textColor}`">{{ profession }}</p>
   </div>
 </template>
