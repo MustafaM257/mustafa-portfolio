@@ -4,8 +4,22 @@
       <h1
         class="text-3xl font-bold tracking-wide text-zinc-800 sm:text-5xl dark:text-zinc-100"
       >
-        Projects I'm proud of
+        Projects
       </h1>
+      <ul role="list" class="flex flex-col gap-5 text-white">
+        <NuxtLink
+          v-for="link in socialLinks"
+          :key="link.platform"
+          :to="link.url"
+          target="_blank"
+          class="transition-all hover:text-blue-500"
+        >
+          <li class="flex gap-5">
+            <Icon :name="link.icon" class="w-6 h-6" />
+            <p>{{ link.text }}</p>
+          </li>
+        </NuxtLink>
+      </ul>
       <div class="mt-6 text-base text-white space-y-7">
         <ProjectsGrid :actions="actions" />
       </div>
