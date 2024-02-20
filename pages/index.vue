@@ -49,4 +49,5 @@ const biography = [
   />
   <Experience id="experience" />
   <Projects id="projects" />
+  <Contact id="contact" />
 </template>
