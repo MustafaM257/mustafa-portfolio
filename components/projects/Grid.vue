@@ -18,14 +18,8 @@
       ]"
     >
       <div>
-        <span
-          :class="[
-            action.iconBackground,
-            action.iconForeground,
-            'inline-flex rounded-lg p-3 ring-4 ring-white',
-          ]"
-        >
-          <Icon name="i-logos:html-5" />
+        <span class="inline-flex">
+          <Icon :name="action.icon" class="w-6 h-6" />
         </span>
       </div>
       <div class="mt-8">
@@ -55,42 +49,7 @@
 </template>
 
 <script setup>
-const actions = [
-  {
-    title: "Learning Management System",
-    description:
-      "A PHP based LMS for schools and colleges, featuring online course materials, attendance tracking, and more.",
-    href: "https://github.com/MustafaM257/LMS",
-    // icon: ClockIcon,
-    iconForeground: "text-teal-700",
-    iconBackground: "bg-teal-50",
-  },
-  {
-    title: "GitHub Insights Website",
-    href: "https://github.com/MustafaM257/React-GithubSearchUsers",
-    // icon: CheckBadgeIcon,
-    description:
-      "A React based website to search for GitHub users and view their repositories and followers via Github APIs.",
-    iconForeground: "text-purple-700",
-    iconBackground: "bg-purple-50",
-  },
-  {
-    title: "Jobs APIs",
-    href: "https://github.com/MustafaM257/Jobs-API",
-    // icon: UsersIcon,
-    description:
-      "A Node.js based RESTful API for job listings and applications.",
-    iconForeground: "text-sky-700",
-    iconBackground: "bg-sky-50",
-  },
-  {
-    title: "Cocktails Catalogue",
-    href: "https://github.com/MustafaM257/cocktailsDB_api_react",
-    // icon: BanknotesIcon,
-    iconForeground: "text-yellow-700",
-    iconBackground: "bg-yellow-50",
-    description:
-      "A React based website to search for cocktails and view their recipes via TheCocktailDB APIs.",
-  },
-];
+const props = defineProps({
+  actions: Array,
+});
 </script>
