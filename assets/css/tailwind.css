@@ -1,12 +1,41 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-*{
-    scroll-behavior:smooth;
+* {
+    scroll-behavior: smooth;
 }
 
-body{
+body {
     @apply bg-neutral-900;
     font-family: 'Poppins', sans-serif;
+}
+
+/* Text Colors */
+p {
+    @apply text-gray-300; /* Lighter text for better readability */
+}
+
+h1 {
+    @apply text-teal-200; /* Vibrant yet not overwhelming */
+}
+
+h3 {
+    @apply text-teal-100; /* Slightly lighter than h1 for hierarchical contrast */
+}
+
+a {
+    @apply text-blue-400 hover:text-blue-300; /* Pleasant and legible links with a hover effect */
+}
+
+/* Card Backgrounds */
+.experience-card {
+    @apply bg-neutral-800; /* Slightly lighter than the page background for depth */
+}
+
+.skill-card {
+    @apply bg-neutral-700; /* Distinct yet cohesive */
+}
+
+.project-card {
+    @apply bg-neutral-600; /* Brightest of the cards for emphasis */
 }

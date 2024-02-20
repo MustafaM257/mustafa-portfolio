@@ -11,7 +11,7 @@
         name="full-name"
         id="full-name"
         autocomplete="name"
-        class="block w-full px-4 py-3 placeholder-gray-500 border-gray-300 shadow-sm rounded-2xl focus:border-blue-500 focus:ring-blue-500"
+        class="block w-full px-4 py-3 shadow-sm rounded-2xl"
         placeholder="Full name"
       />
     </div>
@@ -23,7 +23,7 @@
         type="email"
         required
         autocomplete="email"
-        class="block w-full px-4 py-3 placeholder-gray-500 border-gray-300 shadow-sm rounded-2xl focus:border-blue-500 focus:ring-blue-500"
+        class="block w-full px-4 py-3 shadow-sm rounded-2xl"
         placeholder="Email"
       />
     </div>
@@ -34,7 +34,7 @@
         name="phone"
         id="phone"
         autocomplete="tel"
-        class="block w-full px-4 py-3 placeholder-gray-500 border-gray-300 shadow-sm rounded-2xl focus:border-blue-500 focus:ring-blue-500"
+        class="block w-full px-4 py-3 shadow-sm rounded-2xl"
         placeholder="Phone"
       />
     </div>
@@ -44,14 +44,14 @@
         id="message"
         name="message"
         rows="4"
-        class="block w-full px-4 py-3 placeholder-gray-500 border-gray-300 shadow-sm rounded-2xl focus:border-blue-500 focus:ring-blue-500"
+        class="block w-full px-4 py-3 shadow-sm rounded-2xl"
         placeholder="Message"
       />
     </div>
     <div>
       <button
         type="submit"
-        class="inline-flex justify-center px-6 py-3 text-base font-medium text-white bg-blue-500 border border-transparent shadow-sm rounded-2xl hover:bg-white-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+        class="inline-flex justify-center px-6 py-3 text-base font-medium border border-transparent shadow-sm rounded-2xl focus:outline-none"
       >
         Submit
       </button>

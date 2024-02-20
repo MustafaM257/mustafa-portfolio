@@ -9,19 +9,17 @@
             <NuxtImg
               :src="imageUrl"
               alt="Profile image"
-              class="object-cover pointer-events-none aspect-square rotate-3 rounded-2xl bg-zinc-100"
+              class="object-cover pointer-events-none aspect-square rotate-3 rounded-2xl"
             />
           </Card3D>
         </div>
       </div>
       <div class="lg:order-first lg:row-span-2">
-        <h1
-          class="text-3xl font-bold tracking-wide text-zinc-800 sm:text-5xl dark:text-zinc-100"
-        >
+        <h1 class="text-3xl font-bold tracking-wide sm:text-5xl">
           I’m <span class="text-blue-500">{{ name }}</span> . I live in
           {{ location }}.
         </h1>
-        <div class="mt-6 text-base space-y-7 text-zinc-600">
+        <div class="mt-6 text-base space-y-7">
           <p
             v-for="(paragraph, index) in biography"
             :key="index"
@@ -30,7 +28,7 @@
         </div>
       </div>
       <div class="lg:pl-20">
-        <ul role="list" class="flex flex-col gap-5 text-white">
+        <ul role="list" class="flex flex-col gap-5">
           <NuxtLink
             v-for="link in socialLinks"
             :key="link.platform"

@@ -1,8 +1,8 @@
 <template>
   <footer class="text-white">
     <div class="px-6 py-20 mx-auto overflow-hidden max-w-7xl sm:py-24 lg:px-8">
-      <p class="text-lg italic font-medium leading-5 text-center text-blue-500">
-        Made with ❤️ by Mustafa
+      <p class="text-lg italic font-medium leading-5 text-center">
+        Developed by Mustafa with ❤️.
       </p>
       <div class="flex justify-center mt-10 space-x-10">
         <NuxtLink
@@ -17,7 +17,7 @@
           </li>
         </NuxtLink>
       </div>
-      <p class="mt-10 text-xs leading-5 text-center text-blue-500">
+      <p class="mt-10 text-xs leading-5 text-center">
         &copy; {{ currentYear }} All rights reserved.
       </p>
     </div>

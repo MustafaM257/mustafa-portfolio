@@ -4,34 +4,22 @@
       class="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12"
     >
       <div class="space-y-5 lg:order-first lg:row-span-2">
-        <h1
-          class="text-3xl font-bold tracking-wide text-zinc-800 sm:text-5xl dark:text-zinc-100"
-        >
-          Work
-        </h1>
-        <div class="mt-6 text-base space-y-7 text-zinc-600">
+        <h1 class="text-3xl font-bold tracking-wide sm:text-5xl">Work</h1>
+        <div class="mt-6 text-base space-y-7">
           <ExperienceCard
             v-for="experience in work"
             :item="experience"
-            class="px-4 py-8 bg-blue-500"
+            class="px-4 py-8 bg-neutral-500"
           />
         </div>
-        <h1
-          class="text-3xl font-bold tracking-wide text-zinc-800 sm:text-5xl dark:text-zinc-100"
-        >
-          Education
-        </h1>
-        <div class="mt-6 text-base space-y-7 text-zinc-600">
+        <h1 class="text-3xl font-bold tracking-wide sm:text-5xl">Education</h1>
+        <div class="mt-6 text-base space-y-7">
           <ExperienceCard :item="education" class="px-4 py-8 bg-blue-300" />
         </div>
       </div>
       <div class="lg:pl-20">
-        <h1
-          class="text-3xl font-bold tracking-wide text-zinc-800 sm:text-5xl dark:text-zinc-100"
-        >
-          Skills
-        </h1>
-        <div class="mt-6 text-base text-white space-y-7">
+        <h1 class="text-3xl font-bold tracking-wide sm:text-5xl">Skills</h1>
+        <div class="mt-6 text-base space-y-7">
           <ul
             role="list"
             class="grid grid-cols-2 mt-6 text-center gap-x-4 gap-y-4 hover:opacity-90"
@@ -39,11 +27,11 @@
             <li
               v-for="skill in skills"
               :key="skill.name"
-              class="w-full px-4 py-4 transition-all shadow-lg bg-neutral-500 hover:bg-blue-600 rounded-2xl"
+              class="w-full px-4 py-4 transition-all shadow-lg rounded-2xl skill-card"
             >
               <NuxtLink
                 :to="skill.link"
-                class="block text-lg font-bold text-white hover:underline"
+                class="block text-lg font-bold hover:underline"
                 target="_blank"
               >
                 <Icon :name="skill.icon" class="w-16 h-16 mx-auto" />

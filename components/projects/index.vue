@@ -1,12 +1,8 @@
 <template>
   <div class="w-full px-2 py-10 mx-auto max-w-7xl lg:px-8">
     <div class="lg:order-first lg:row-span-2">
-      <h1
-        class="text-3xl font-bold tracking-wide text-zinc-800 sm:text-5xl dark:text-zinc-100"
-      >
-        Projects
-      </h1>
-      <ul role="list" class="flex flex-col gap-5 text-white">
+      <h1 class="text-3xl font-bold tracking-wide sm:text-5xl">Projects</h1>
+      <ul role="list" class="flex flex-col gap-5">
         <NuxtLink
           v-for="link in socialLinks"
           :key="link.platform"
@@ -20,8 +16,8 @@
           </li>
         </NuxtLink>
       </ul>
-      <div class="mt-6 text-base text-white space-y-7">
-        <ProjectsGrid :actions="actions" />
+      <div class="mt-6 text-base space-y-7">
+        <ProjectsGrid :actions="actions" class="project-card" />
       </div>
     </div>
   </div>

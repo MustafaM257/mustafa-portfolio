@@ -1,6 +1,6 @@
 <template>
   <div
-    class="overflow-hidden divide-y divide-gray-200 shadow rounded-2xl sm:grid sm:grid-cols-2 sm:gap-px sm:divide-y-0"
+    class="overflow-hidden divide-y divide-white shadow rounded-2xl sm:grid sm:grid-cols-2 sm:gap-px sm:divide-y-0"
   >
     <div
       v-for="(action, actionIdx) in actions"
@@ -14,7 +14,7 @@
         actionIdx === actions.length - 1
           ? 'rounded-bl-2xl rounded-br-2xl sm:rounded-bl-none'
           : '',
-        'group relative bg-blue-500 p-6 focus-within:ring-2 focus-within:ring-inset ',
+        'group relative p-6 focus-within:ring-2 focus-within:ring-inset ',
       ]"
     >
       <div>
@@ -23,14 +23,14 @@
         </span>
       </div>
       <div class="mt-8">
-        <h3 class="text-base font-semibold leading-6 text-white">
+        <h3 class="text-base font-semibold leading-6">
           <a :href="action.href" class="focus:outline-none">
             <!-- Extend touch target to entire panel -->
             <span class="absolute inset-0" aria-hidden="true" />
             {{ action.title }}
           </a>
         </h3>
-        <p class="mt-2 text-sm text-white">
+        <p class="mt-2 text-sm">
           {{ action.description }}
         </p>
       </div>
