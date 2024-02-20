@@ -8,5 +8,13 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     'nuxt-icon',
     '@nuxt/image',
-  ]
+    '@nuxtjs/google-fonts', 
+  ],
+  googleFonts: {
+    families: {
+      'Poppins' : true,
+      'Roboto' : true,
+      'Inter' : true,
+    }
+  },
 });
