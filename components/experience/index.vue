@@ -22,7 +22,7 @@
           Education
         </h1>
         <div class="mt-6 text-base space-y-7 text-zinc-600">
-          <ExperienceCard :item="education" class="px-4 py-8" />
+          <ExperienceCard :item="education" class="px-4 py-8 bg-blue-300" />
         </div>
       </div>
       <div class="lg:pl-20">

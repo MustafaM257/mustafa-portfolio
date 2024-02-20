@@ -48,4 +48,5 @@ const biography = [
     :socialLinks="socialLinks"
   />
   <Experience id="experience" />
+  <Projects id="projects" />
 </template>
