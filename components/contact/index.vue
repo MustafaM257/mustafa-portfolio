@@ -1,8 +1,13 @@
 <template>
   <div
-    class="relative px-2 py-16 mx-auto max-w-7xl lg:grid lg:grid-cols-5 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-12"
+    class="relative px-2 py-16 mx-auto max-w-7xl lg:grid lg:grid-cols-5 lg:col-span-2 lg:px-8 xl:pr-12"
   >
     <div class="py-16 lg:col-span-2 lg:py-24 xl:pr-12">
+      <h1
+        class="text-3xl font-bold tracking-wide text-zinc-800 sm:text-5xl dark:text-zinc-100"
+      >
+        Contact me!
+      </h1>
       <ul
         role="list"
         class="flex flex-col max-w-lg gap-5 mx-auto mt-6 text-white"
@@ -22,63 +27,7 @@
       </ul>
     </div>
     <div class="py-16 lg:col-span-3 lg:px-8 lg:py-24 xl:pl-12">
-      <form
-        action="#"
-        method="POST"
-        class="grid max-w-lg grid-cols-1 mx-auto gap-y-6 lg:max-w-none"
-      >
-        <div>
-          <label for="full-name" class="sr-only">Full name</label>
-          <input
-            type="text"
-            name="full-name"
-            id="full-name"
-            autocomplete="name"
-            class="block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
-            placeholder="Full name"
-          />
-        </div>
-        <div>
-          <label for="email" class="sr-only">Email</label>
-          <input
-            id="email"
-            name="email"
-            type="email"
-            autocomplete="email"
-            class="block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
-            placeholder="Email"
-          />
-        </div>
-        <div>
-          <label for="phone" class="sr-only">Phone</label>
-          <input
-            type="text"
-            name="phone"
-            id="phone"
-            autocomplete="tel"
-            class="block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
-            placeholder="Phone"
-          />
-        </div>
-        <div>
-          <label for="message" class="sr-only">Message</label>
-          <textarea
-            id="message"
-            name="message"
-            rows="4"
-            class="block w-full px-4 py-3 placeholder-gray-500 border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
-            placeholder="Message"
-          />
-        </div>
-        <div>
-          <button
-            type="submit"
-            class="inline-flex justify-center px-6 py-3 text-base font-medium text-white bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-          >
-            Submit
-          </button>
-        </div>
-      </form>
+      <ContactForm />
     </div>
   </div>
 </template>
