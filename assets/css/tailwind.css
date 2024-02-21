@@ -36,7 +36,3 @@ a {
     @apply bg-neutral-400; /* Distinct yet cohesive */
 }
 
-.project-card {
-    @apply  bg-neutral-800;
-     /* Brightest of the cards for emphasis */
-}

@@ -6,13 +6,15 @@
       v-for="(action, actionIdx) in actions"
       :key="action.title"
       :class="[
-        actionIdx === 0 ? 'rounded-tl-lg rounded-tr-lg sm:rounded-tr-none' : '',
-        actionIdx === 1 ? 'sm:rounded-tr-lg' : '',
-        actionIdx === actions.length - 2 ? 'sm:rounded-bl-lg' : '',
-        actionIdx === actions.length - 1
-          ? 'rounded-bl-lg rounded-br-lg sm:rounded-bl-none'
+        actionIdx === 0
+          ? 'rounded-tl-2xl rounded-tr-2xl sm:rounded-tr-none'
           : '',
-        'group relative bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-500',
+        actionIdx === 1 ? 'sm:rounded-tr-2xl' : '',
+        actionIdx === actions.length - 2 ? 'sm:rounded-bl-2xl' : '',
+        actionIdx === actions.length - 1
+          ? 'rounded-bl-2xl rounded-br-2xl sm:rounded-bl-none'
+          : '',
+        'group relative bg-neutral-600 p-6 focus-within:ring-2 focus-within:ring-inset ',
       ]"
     >
       <div>
@@ -20,7 +22,7 @@
           :class="[
             action.iconBackground,
             action.iconForeground,
-            'inline-flex rounded-lg p-3 ring-4 ring-white',
+            'inline-flex rounded-2xl p-3 ring-4 text-white ring-neutral-900',
           ]"
         >
           <Icon :name="action.icon" class="w-6 h-6" aria-hidden="true" />
@@ -28,15 +30,14 @@
       </div>
       <div class="mt-8">
         <h3 class="text-base font-semibold leading-6">
-          <a :href="action.href" class="focus:outline-none">
+          <NuxtLink :to="action.href" class="focus:outline-none">
             <!-- Extend touch target to entire panel -->
             <span class="absolute inset-0" aria-hidden="true" />
             {{ action.title }}
-          </a>
+          </NuxtLink>
         </h3>
         <p class="mt-2 text-sm">
-          Doloribus dolores nostrum quia qui natus officia quod et dolorem. Sit
-          repellendus qui ut at blanditiis et quo et molestiae.
+          {{ action.description }}
         </p>
       </div>
       <span
