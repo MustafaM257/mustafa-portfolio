@@ -1,25 +1,29 @@
 <template>
   <div
-    class="overflow-hidden divide-y divide-white shadow rounded-2xl sm:grid sm:grid-cols-2 sm:gap-px sm:divide-y-0"
+    class="overflow-hidden divide-y divide-gray-200 shadow rounded-2xl sm:grid sm:grid-cols-2 sm:gap-px sm:divide-y-0"
   >
     <div
       v-for="(action, actionIdx) in actions"
       :key="action.title"
       :class="[
-        actionIdx === 0
-          ? 'rounded-tl-2xl rounded-tr-2xl sm:rounded-tr-none'
-          : '',
+        actionIdx === 0 ? 'rounded-tl-lg rounded-tr-lg sm:rounded-tr-none' : '',
         actionIdx === 1 ? 'sm:rounded-tr-lg' : '',
-        actionIdx === actions.length - 2 ? 'sm:rounded-bl-2xl' : '',
+        actionIdx === actions.length - 2 ? 'sm:rounded-bl-lg' : '',
         actionIdx === actions.length - 1
-          ? 'rounded-bl-2xl rounded-br-2xl sm:rounded-bl-none'
+          ? 'rounded-bl-lg rounded-br-lg sm:rounded-bl-none'
           : '',
-        'group relative p-6 focus-within:ring-2 focus-within:ring-inset ',
+        'group relative bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-500',
       ]"
     >
       <div>
-        <span class="inline-flex">
-          <Icon :name="action.icon" class="w-6 h-6" />
+        <span
+          :class="[
+            action.iconBackground,
+            action.iconForeground,
+            'inline-flex rounded-lg p-3 ring-4 ring-white',
+          ]"
+        >
+          <Icon :name="action.icon" class="w-6 h-6" aria-hidden="true" />
         </span>
       </div>
       <div class="mt-8">
@@ -31,11 +35,12 @@
           </a>
         </h3>
         <p class="mt-2 text-sm">
-          {{ action.description }}
+          Doloribus dolores nostrum quia qui natus officia quod et dolorem. Sit
+          repellendus qui ut at blanditiis et quo et molestiae.
         </p>
       </div>
       <span
-        class="absolute pointer-events-none text-neutral-20 right-6 top-6 group-hover:text-black"
+        class="absolute pointer-events-none right-6 top-6"
         aria-hidden="true"
       >
         <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">

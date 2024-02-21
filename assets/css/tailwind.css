@@ -33,9 +33,10 @@ a {
 }
 
 .skill-card {
-    @apply bg-neutral-700; /* Distinct yet cohesive */
+    @apply bg-neutral-400; /* Distinct yet cohesive */
 }
 
 .project-card {
-    @apply bg-neutral-600; /* Brightest of the cards for emphasis */
+    @apply  bg-neutral-800;
+     /* Brightest of the cards for emphasis */
 }
