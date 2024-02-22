@@ -51,7 +51,7 @@
     <div>
       <button
         type="submit"
-        class="inline-flex justify-center px-6 py-3 text-base font-medium border border-transparent shadow-sm rounded-2xl focus:outline-none"
+        class="inline-flex justify-center px-6 py-3 text-base font-medium border border-transparent shadow-sm rounded-2xl bg-neutral-500 focus:outline-none"
       >
         Submit
       </button>

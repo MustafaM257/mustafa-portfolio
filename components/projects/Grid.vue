@@ -14,7 +14,7 @@
         actionIdx === actions.length - 1
           ? 'rounded-bl-2xl rounded-br-2xl sm:rounded-bl-none'
           : '',
-        'group relative bg-neutral-600 p-6 focus-within:ring-2 focus-within:ring-inset ',
+        'group relative bg-neutral-800 p-6 focus-within:ring-2 focus-within:ring-inset ',
       ]"
     >
       <div>
