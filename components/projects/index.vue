@@ -2,20 +2,6 @@
   <div class="w-full px-2 py-10 mx-auto max-w-7xl lg:px-8">
     <div class="lg:order-first lg:row-span-2">
       <h1 class="text-3xl font-bold tracking-wide sm:text-5xl">Projects</h1>
-      <ul role="list" class="flex flex-col gap-5">
-        <NuxtLink
-          v-for="link in socialLinks"
-          :key="link.platform"
-          :to="link.url"
-          target="_blank"
-          class="transition-all hover:text-blue-500"
-        >
-          <li class="flex gap-5">
-            <Icon :name="link.icon" class="w-6 h-6" />
-            <p>{{ link.text }}</p>
-          </li>
-        </NuxtLink>
-      </ul>
       <div class="mt-6 text-base space-y-7">
         <ProjectsGrid :actions="actions" class="project-card" />
       </div>

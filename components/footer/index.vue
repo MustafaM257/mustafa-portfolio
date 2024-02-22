@@ -4,7 +4,7 @@
       <p class="text-lg italic font-medium leading-5 text-center">
         Developed by Mustafa with ❤️.
       </p>
-      <div class="flex justify-center mt-10 space-x-10">
+      <!-- <div class="flex justify-center mt-10 space-x-10">
         <NuxtLink
           v-for="link in socialLinks"
           :key="link.platform"
@@ -16,7 +16,7 @@
             <Icon :name="link.icon" class="w-6 h-6" />
           </li>
         </NuxtLink>
-      </div>
+      </div> -->
       <p class="mt-10 text-xs leading-5 text-center">
         &copy; {{ currentYear }} All rights reserved.
       </p>
