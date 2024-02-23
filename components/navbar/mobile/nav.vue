@@ -36,7 +36,7 @@
           <h2 class="text-sm font-medium text-zinc-600">Navigation</h2>
         </div>
         <nav class="mt-6">
-          <ul class="-my-2 text-base divide-y divide-zinc-100 text-zinc-800">
+          <ul class="-my-2 text-base divide-y divide-zinc-100">
             <NavbarMobileItem href="#home">Home</NavbarMobileItem>
             <NavbarMobileItem href="#about">About</NavbarMobileItem>
             <NavbarMobileItem href="#experience">Experience</NavbarMobileItem>

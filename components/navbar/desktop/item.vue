@@ -2,10 +2,10 @@
   <li>
     <NuxtLink
       :to="href"
-      class="relative block px-3 py-2 transition"
+      class="relative block px-3 py-2 transition text-neutral-950 hover:text-neutral-700"
       :class="[
-        isActive ? 'text-teal-500 ' : '',
-        !isActive ? 'hover:text-blue-500 ' : '',
+        isActive ? 'text-neutral-950' : '',
+        !isActive ? 'hover:text-neutral-700 ' : '',
       ]"
     >
       <slot />
