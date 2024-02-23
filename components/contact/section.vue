@@ -4,7 +4,7 @@
       Don't hesitate to contact me! Anytime you want.
     </h1>
     <div class="mt-6 text-base space-y-7">
-      <div class="hidden mt-5 lg:block">
+      <div class="hidden mt-10 lg:block">
         <svg
           width="315px"
           height="107px"
