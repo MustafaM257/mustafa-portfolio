@@ -1,0 +1,73 @@
+[
+    {
+      "name": "HTML",
+      "icon": "i-logos:html-5",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+    },
+    {
+      "name": "CSS",
+      "icon": "i-logos:css-3",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+    },
+    {
+      "name": "tailwind",
+      "icon": "i-logos:tailwindcss",
+      "link": "https://tailwindcss.com/"
+    },
+    {
+      "name": "bootstrap",
+      "icon": "i-logos:bootstrap",
+      "link": "https://getbootstrap.com/"
+    },
+    {
+      "name": "javascript",
+      "icon": "i-logos:javascript",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+    },
+    {
+      "name": "Typescript",
+      "icon": "i-logos:typescript-icon",
+      "link": "https://www.typescriptlang.org/"
+    },
+    {
+      "name": "React",
+      "icon": "i-logos:react",
+      "link": "https://reactjs.org/"
+    },
+    {
+      "name": "Next",
+      "icon": "i-logos:nextjs",
+      "link": "https://nextjs.org/"
+    },
+    {
+      "name": "Vue",
+      "icon": "i-logos:vue",
+      "link": "https://vuejs.org/"
+    },
+    {
+      "name": "Nuxt",
+      "icon": "i-logos:nuxt",
+      "link": "https://nuxtjs.org/"
+    },
+    {
+      "name": "Node",
+      "icon": "i-logos:nodejs",
+      "link": "https://nodejs.org/"
+    },
+    {
+      "name": "Express",
+      "icon": "i-logos:express",
+      "link": "https://expressjs.com/"
+    },
+    {
+      "name": "MongoDB",
+      "icon": "i-logos:mongodb",
+      "link": "https://www.mongodb.com/"
+    },
+    {
+      "name": "PostgreSQL",
+      "icon": "i-logos:postgresql",
+      "link": "https://www.postgresql.org/"
+    }
+  ]
+  

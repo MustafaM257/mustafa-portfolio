@@ -17,45 +17,16 @@
           </li>
         </NuxtLink>
       </div> -->
-      <p class="mt-10 text-xs leading-5 text-center">
-        &copy; {{ currentYear }} All rights reserved.
+      <p class="py-5 mt-10 text-xs leading-5 text-center">
+        I'm an open sourcer at heart, embracing the share-and-thrive mentality.
+        Find the essence of this on my GitHub.
       </p>
+      <p class="text-center">&copy; {{ currentYear }} All rights reserved.</p>
     </div>
   </footer>
 </template>
 
 <script setup>
 const currentYear = new Date().getFullYear();
-const socialLinks = [
-  {
-    platform: "Instagram",
-    url: "https://www.instagram.com/mustafa.m257/",
-    icon: "i-line-md:instagram",
-    text: "Follow on Instagram!",
-  },
-  {
-    platform: "LinkedIn",
-    url: "https://www.linkedin.com/in/mustafam257/",
-    icon: "i-line-md:linkedin",
-    text: "Follow on LinkedIn!",
-  },
-  {
-    platform: "GitHub",
-    url: "https://github.com/MustafaM257",
-    icon: "i-line-md:github",
-    text: "Follow on Github!",
-  },
-  {
-    platform: "Email",
-    url: "mailto:mustafa.m257@proton.me",
-    icon: "i-line-md:email",
-    text: "mustafa.m257@proton.me",
-  },
-  {
-    platform: "Phone",
-    url: "tel:+13473822775",
-    icon: "i-line-md:phone",
-    text: "+1 (347) 382-2775",
-  },
-];
+import socialLinks from "~/data/links.json";
 </script>

@@ -43,7 +43,7 @@ const logoGradient = computed(() => {
       }"
     />
     <p class="text-lg font-bold">Hey, I'm</p>
-    <h1 class="text-5xl uppercase" ref="logo" :style="{}">
+    <h1 class="text-5xl text-center uppercase" ref="logo" :style="{}">
       {{ name }}
     </h1>
     <h3 class="text-2xl">{{ profession }}</h3>

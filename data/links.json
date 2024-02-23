@@ -1,0 +1,33 @@
+[
+    {
+      "platform": "Instagram",
+      "url": "https://www.instagram.com/mustafa.m257/",
+      "icon": "i-line-md:instagram",
+      "text": "Follow on Instagram!"
+    },
+    {
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/in/mustafam257/",
+      "icon": "i-line-md:linkedin",
+      "text": "Follow on LinkedIn!"
+    },
+    {
+      "platform": "GitHub",
+      "url": "https://github.com/MustafaM257",
+      "icon": "i-line-md:github",
+      "text": "Follow on Github!"
+    },
+    {
+      "platform": "Email",
+      "url": "mailto:mustafa.m257@proton.me",
+      "icon": "i-line-md:email",
+      "text": "mustafa.m257@proton.me"
+    },
+    {
+      "platform": "Phone",
+      "url": "tel:+13473822775",
+      "icon": "i-line-md:phone",
+      "text": "+1 (347) 382-2775"
+    }
+  ]
+  

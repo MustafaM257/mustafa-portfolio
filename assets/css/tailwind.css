@@ -33,6 +33,6 @@ a {
 }
 
 .skill-card {
-    @apply bg-neutral-400; /* Distinct yet cohesive */
+    @apply bg-neutral-300; /* Distinct yet cohesive */
 }
 

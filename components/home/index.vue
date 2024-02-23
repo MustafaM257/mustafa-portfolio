@@ -1,3 +1,3 @@
 <template>
-  <Effect name="Mustafa Al Mohammad" profession="Software Engineer" />
+  <Effect name="Mostafa Al Mohammad" profession="Software Engineer" />
 </template>
