@@ -34,7 +34,7 @@ const logoGradient = computed(() => {
     class="w-screen h-screen bg-gradient-to-b from-gray-900 to-neutral-900 from-70% flex items-center justify-center flex-col gap-5 relative overflow-hidden"
   >
     <div
-      class="absolute -translate-x-1/2 -translate-y-1/2 rounded-full pointer-events-none bg-blue-500/30 blur-3xl"
+      class="absolute hidden -translate-x-1/2 -translate-y-1/2 rounded-full pointer-events-none lg:block bg-blue-500/30 blur-3xl"
       :style="{
         left: `${x}px`,
         top: `${y}px`,
